@@ -1,0 +1,22 @@
+SYSTEM turbo_car1 {
+INTERFACE {
+STATE { REAL position [-50, 50];
+REAL velocity [-10, 10];
+REAL turbocount [0, -10]; }
+INPUT { REAL acc [-1, 1];
+BOOL turbo; }
+OUTPUT { REAL y; }
+}
+IMPLEMENTATION {
+AUX { REAL z; }
+DA {
+z = {IF turbo THEN 2*acc ELSE acc};
+}
+CONTINUOUS {
+position = position + velocity + z;
+velocity = velocity + 0.5*z;
+turbocount = turbocount - (REAL turbo);
+}
+OUTPUT { y = position; }
+}
+}
