@@ -13,4 +13,4 @@ This project employs neural networks for graybox modeling of a gearbox system th
 These scripts help build a robust neural network model capable of predicting gearbox state under various conditions.
 
 ## 2. Homework
-This folder contains homework assignments from the hybrid dynamical systems course. These tasks focus on understanding and analyzing various dynamical systems using both analytical methods and simulations.
+This folder contains project and homework assignments from the hybrid dynamical systems course. These tasks focus on understanding and analyzing various dynamical systems using both analytical methods and simulations.
